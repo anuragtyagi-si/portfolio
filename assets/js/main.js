@@ -121,6 +121,7 @@
 
   /* ── 4. THREE.JS NEURAL NETWORK HERO ── */
   (function initNeuralNet() {
+    try {
     const canvas = document.getElementById("neural-canvas");
     if (!canvas || typeof THREE === "undefined") return;
     const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
@@ -206,6 +207,7 @@
       scene.rotation.x += (mouseY * 0.25 - scene.rotation.x) * 0.03;
       renderer.render(scene, camera);
     })();
+    } catch (err) { /* WebGL unavailable — skip the 3D hero; the rest of the page must still run. */ }
   })();
 
   /* ── 5. GSAP SCROLL REVEALS ── */
@@ -225,6 +227,18 @@
   } else {
     document.querySelectorAll(".reveal").forEach(el => { el.style.opacity = 1; el.style.transform = "none"; });
   }
+
+  // Safety net: the hero must never stay invisible. If a hero reveal is
+  // still fully hidden 2.5s after load (GSAP/ScrollTrigger misfire),
+  // show it anyway. Below-fold sections keep their scroll reveals.
+  setTimeout(() => {
+    document.querySelectorAll(".hero .reveal").forEach(el => {
+      if (parseFloat(getComputedStyle(el).opacity) === 0) {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+      }
+    });
+  }, 2500);
 
   /* ── 6. ANIMATED COUNTERS ── */
   const counterObs = new IntersectionObserver((entries) => {
