@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anurag Tyagi — AI Web Developer & Software Developer</title>
+  <meta name="description" content="Portfolio of an AI Web Developer & Software Developer specializing in AI automation, agentic AI, and modern full-stack web development." />
+  <meta property="og:title" content="Anurag Tyagi — AI Web Developer" />
+  <meta property="og:description" content="AI automation · Agentic AI · React · Next.js · Three.js · Node.js · Go · Python" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="logo"><span class="logo-bracket">&lt;</span>AI<span class="logo-dot">·</span>DEV<span class="logo-bracket">/&gt;</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#ai" class="nav-link">AI Focus</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <header class="hero" id="hero">
+    <canvas id="neural-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal"><span class="pulse-dot"></span> Available for freelance projects</div>
+      <p class="hero-kicker reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">Anurag Tyagi</h1>
+      <h2 class="hero-role reveal">I'm an <span class="typed" id="typed"></span><span class="caret">|</span></h2>
+      <p class="hero-desc reveal">
+        I build intelligent web experiences — from autonomous AI agents and
+        automation pipelines to blazing-fast React apps and immersive 3D interfaces.
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Projects Built</span></div>
+        <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">In the Toolkit</span></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">AI Focus Areas</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </header>
+
+  <!-- ══════════ TECH MARQUEE ══════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span>
+      <span>React Native</span><span>Three.js</span><span>Node.js</span><span>Python</span>
+      <span>Go</span><span>PostgreSQL</span><span>Agentic AI</span><span>AI Automation</span>
+    </div>
+  </div>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-kicker reveal">// about me</p>
+      <h2 class="section-title reveal">Turning ideas into <span class="grad">intelligent software</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a software developer working at the intersection of
+            <strong>modern web development</strong> and
+            <strong>artificial intelligence</strong>. My core strength is taking a
+            product from a rough idea to a polished, deployed application —
+            frontend, backend, and the AI layer in between.
+          </p>
+          <p>
+            On the web side I craft responsive, accessible, animated interfaces
+            with React, Next.js and Three.js. On the AI side I design
+            <strong>agentic workflows</strong> — autonomous agents, RAG pipelines,
+            and automation systems that remove repetitive work and unlock new
+            product capabilities.
+          </p>
+          <p>
+            I'm currently open to <strong>freelance projects</strong>: AI-powered
+            web apps, automation builds, SaaS MVPs, and immersive frontend experiences.
+          </p>
+          <div class="about-tags">
+            <span class="chip">🚀 Fast delivery</span>
+            <span class="chip">💬 Clear communication</span>
+            <span class="chip">🧠 AI-first thinking</span>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="terminal">
+            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">ai-web-developer</p>
+              <p><span class="t-prompt">$</span> cat focus.txt</p>
+              <p class="t-out">AI Automation · Agentic AI<br />Full-Stack Web Apps · 3D Web</p>
+              <p><span class="t-prompt">$</span> ./availability --check</p>
+              <p class="t-out t-green">✓ open for freelance — let's build</p>
+              <p><span class="t-prompt">$</span> <span class="t-caret">▊</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-kicker reveal">// skills</p>
+      <h2 class="section-title reveal">My <span class="grad">tech arsenal</span></h2>
+      <p class="section-sub reveal">Filter by discipline — every bar is a skill I ship with.</p>
+
+      <div class="skill-tabs reveal" id="skillTabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="frontend">Frontend</button>
+        <button class="tab" data-filter="backend">Backend</button>
+        <button class="tab" data-filter="ai">AI &amp; Automation</button>
+        <button class="tab" data-filter="tools">Tools</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid"><!-- rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ══════════ AI FOCUS ══════════ -->
+  <section class="section" id="ai">
+    <div class="container">
+      <p class="section-kicker reveal">// ai focus</p>
+      <h2 class="section-title reveal">Where I <span class="grad">specialize</span></h2>
+      <p class="section-sub reveal">AI isn't a buzzword here — it's the product layer I build on.</p>
+      <div class="ai-grid">
+        <div class="ai-card reveal">
+          <div class="ai-icon">🤖</div>
+          <h3>Agentic AI Systems</h3>
+          <p>Autonomous agents that plan, use tools, and complete multi-step tasks — customer support agents, research assistants, coding copilots.</p>
+          <div class="ai-tags"><span>LangChain</span><span>Tool Use</span><span>Multi-Agent</span></div>
+        </div>
+        <div class="ai-card reveal">
+          <div class="ai-icon">⚡</div>
+          <h3>AI Workflow Automation</h3>
+          <p>End-to-end pipelines that connect your tools and data — lead enrichment, content generation, reporting — running on autopilot.</p>
+          <div class="ai-tags"><span>n8n</span><span>Zapier</span><span>Webhooks</span></div>
+        </div>
+        <div class="ai-card reveal">
+          <div class="ai-icon">🧠</div>
+          <h3>LLM Apps &amp; RAG</h3>
+          <p>Chatbots and copilots grounded in your own data with retrieval-augmented generation, embeddings, and vector search.</p>
+          <div class="ai-tags"><span>RAG</span><span>pgvector</span><span>Embeddings</span></div>
+        </div>
+        <div class="ai-card reveal">
+          <div class="ai-icon">✨</div>
+          <h3>Intelligent Interfaces</h3>
+          <p>Frontends that feel alive — AI-assisted UX, real-time streaming responses, and immersive Three.js/WebGL moments.</p>
+          <div class="ai-tags"><span>Streaming UI</span><span>Three.js</span><span>Motion</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="section-kicker reveal">// projects</p>
+      <h2 class="section-title reveal">Selected <span class="grad">work</span></h2>
+      <p class="section-sub reveal">Real builds so far — every one shipped with an AI-assisted workflow. More on the way.</p>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-1"><span class="thumb-emoji">🔁</span></div>
+          <div class="project-body">
+            <h3>infloop</h3>
+            <p>One system, one loop for influencers and their marketing campaigns — interactive marketing site with a 3D hero loop, four pages, and a pricing planner.</p>
+            <div class="project-tags"><span>React</span><span>Three.js</span><span>Next.js</span></div>
+            <div class="project-links"><a href="#" aria-label="Live demo">↗ Live</a></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-2"><span class="thumb-emoji">🛰️</span></div>
+          <div class="project-body">
+            <h3>AI Developer Portfolio</h3>
+            <p>This site — a Three.js neural-net hero, GSAP scroll animations, filterable skill grids, and a working contact flow, deployed as a static site.</p>
+            <div class="project-tags"><span>Three.js</span><span>GSAP</span><span>GitHub Pages</span></div>
+            <div class="project-links"><a href="#" aria-label="Live demo">↗ Live</a></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-3"><span class="thumb-emoji">🚀</span></div>
+          <div class="project-body">
+            <h3>Your project could be next</h3>
+            <p>I'm taking on freelance builds now — AI-powered web apps, automation systems, SaaS MVPs, and immersive frontends.</p>
+            <div class="project-tags"><span>Freelance</span><span>Open</span></div>
+            <div class="project-links"><a href="#contact" aria-label="Start a project">↗ Start a project</a></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ JOURNEY ══════════ -->
+  <section class="section" id="journey">
+    <div class="container">
+      <p class="section-kicker reveal">// journey</p>
+      <h2 class="section-title reveal">The road <span class="grad">so far</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Now — 2026</span>
+            <h3>The Freelance Launch</h3>
+            <p>Building real projects, shipping this portfolio, and working toward the first client — with AI in the workflow from day one.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Learning the stack</span>
+            <h3>JavaScript → React → Full-Stack</h3>
+            <p>From the fundamentals to modern tooling — React, Next.js, Node.js — with a growing focus on AI-powered apps.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">First lines of code</span>
+            <h3>HTML · CSS · JavaScript</h3>
+            <p>Fell in love with turning ideas into things people can click — and never really stopped.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <p class="section-kicker reveal">// contact</p>
+      <h2 class="section-title reveal">Let's build something <span class="grad">intelligent</span></h2>
+      <p class="section-sub reveal">Have a project in mind? My inbox is always open.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-row" href="mailto:saitamamango@gmail.com">
+            <span class="contact-icon">📧</span>
+            <span><strong>Email</strong><br />saitamamango@gmail.com</span>
+          </a>
+          <a class="contact-row" href="https://github.com/yourusername" target="_blank" rel="noopener">
+            <span class="contact-icon">🐙</span>
+            <span><strong>GitHub</strong><br />github.com/yourusername</span>
+          </a>
+          <a class="contact-row" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+            <span class="contact-icon">💼</span>
+            <span><strong>LinkedIn</strong><br />linkedin.com/in/yourusername</span>
+          </a>
+          <a class="contact-row" href="https://x.com/yourusername" target="_blank" rel="noopener">
+            <span class="contact-icon">𝕏</span>
+            <span><strong>X / Twitter</strong><br />x.com/yourusername</span>
+          </a>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>Your name<input type="text" name="name" placeholder="Jane Doe" required /></label>
+          <label>Your email<input type="email" name="email" placeholder="jane@company.com" required /></label>
+          <label>Project details<textarea name="message" rows="5" placeholder="Tell me about your project, timeline, and budget…" required></textarea></label>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+          <p class="form-note">Opens your email client with the message pre-filled.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by <strong>Anurag Tyagi</strong> · <span id="year"></span></p>
+      <p class="footer-sub">Powered by curiosity, caffeine &amp; large language models.</p>
+      <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
